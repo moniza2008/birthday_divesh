@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Divesh</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Divesh</title>
 
-<style>
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#ff758c,#ff7eb3,#7afcff);
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff758c, #7a5cff);
+            color: white;
+            text-align: center;
+        }
 
-.card{
-    background: rgba(0,0,0,0.35);
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
+        .card {
+            background: rgba(0,0,0,0.3);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
 
-h1{
-    font-size:38px;
-}
+        img {
+            width: 220px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
 
-p{
-    font-size:20px;
-}
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
 
-button{
-    margin-top:20px;
-    padding:12px 25px;
-    border:none;
-    border-radius:25px;
-    background:#ff4081;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-}
+        p {
+            font-size: 20px;
+        }
 
-button:hover{
-    background:#e91e63;
-}
-</style>
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #ffcc00;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
+        button:hover {
+            background: #ffd633;
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="card">
-    <h1>🎉 Happy Birthday 🎂</h1>
-    <h2>Divesh Prasath 💙</h2>
-    <p>Born on Feb 16 ⭐</p>
+    <h1>🎂 Happy Birthday Divesh 🎂</h1>
 
-    <button onclick="showWish()">Click Birthday Wish</button>
-    <p id="wish"></p>
+    <img src="photo.jpg" alt="Birthday Photo">
+
+    <p>Wishing you happiness, success and lots of cake 🎉</p>
+
+    <button onclick="playMusic()">Play Birthday Song 🎵</button>
+
+    <audio id="song">
+        <source src="bday_song.mp3" type="audio/mp3">
+    </audio>
 </div>
 
 <script>
-function showWish(){
-    document.getElementById("wish").innerHTML =
-    "Wishing you success, happiness, good health and unlimited cake 🍰🎉";
+function playMusic(){
+    document.getElementById("song").play();
 }
 </script>
 
