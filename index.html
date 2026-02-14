@@ -1,88 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Divesh</title>
+    <meta charset="UTF-8">
+    <title>Make a Wish</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #ff758c, #7a5cff);
-    color: white;
-    text-align: center;
-}
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
 
-.card {
-    background: rgba(0,0,0,0.3);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
+        .cake {
+            font-size: 80px;
+        }
 
-img {
-    width: 220px;
-    border-radius: 15px;
-    margin: 15px 0;
-}
+        h1 {
+            margin: 20px 0;
+            color: #ff4d6d;
+        }
 
-h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background: #ff4d6d;
+            color: white;
+            cursor: pointer;
+        }
 
-p {
-    font-size: 20px;
-}
-
-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    background: #ffcc00;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #ffd633;
-}
-</style>
+        button:hover {
+            background: #e63956;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="box">
+        <div class="cake">🎂</div>
+        <h1>Make a Wish</h1>
+        <button onclick="nextPage()">Continue</button>
+    </div>
 
-<div class="card">
-
-<h1>🎂 Happy Birthday Divesh 🎂</h1>
-
-<img src="photo.jpg" alt="Birthday Photo">
-
-<p>Wishing you happiness, success and lots of cake 🎉</p>
-
-<button onclick="playMusic()">Play Birthday Song 🎵</button>
-
-<audio id="song" preload="auto">
-    <source src="bday_song.mp3" type="audio/mpeg">
-</audio>
-
-</div>
-
-<script>
-function playMusic() {
-    var audio = document.getElementById("song");
-    audio.play().catch(function(error){
-        alert("Click again to play music 🎵");
-    });
-}
-</script>
-
+    <script>
+        function nextPage() {
+            window.location.href = "birthday.html";
+        }
+    </script>
 </body>
 </html>
 
