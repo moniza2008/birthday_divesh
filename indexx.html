@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Divesh</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3,#7afcff);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.card{
+    background: rgba(0,0,0,0.35);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+h1{
+    font-size:38px;
+}
+
+p{
+    font-size:20px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#ff4081;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e91e63;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🎉 Happy Birthday 🎂</h1>
+    <h2>Divesh Prasath 💙</h2>
+    <p>Born on Feb 16 ⭐</p>
+
+    <button onclick="showWish()">Click Birthday Wish</button>
+    <p id="wish"></p>
+</div>
+
+<script>
+function showWish(){
+    document.getElementById("wish").innerHTML =
+    "Wishing you success, happiness, good health and unlimited cake 🍰🎉";
+}
+</script>
+
+</body>
+</html>
